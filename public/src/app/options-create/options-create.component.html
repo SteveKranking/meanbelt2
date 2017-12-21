@@ -1,0 +1,16 @@
+<div>
+    <button [routerLink]="['/dashboard']" > Home </button>
+    <button [routerLink]="['/poll', poll._id]"> Back to the Poll </button>
+</div>
+
+<h2>{{ poll.question }}</h2>
+<h2> {{ poll | json }} </h2>
+<p> Add a comment/option! </p>
+<div> 
+  <form (submit)="createOptions()"> 
+    <label> Comment/Option: </label>
+    <input type="text" name="" [(ngModel)]="poll.options" [ngModelOptions]="{standalone: true}"> 
+    <button type="submit"> Post </button>
+  </form>
+</div>
+

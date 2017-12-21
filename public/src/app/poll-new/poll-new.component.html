@@ -1,0 +1,26 @@
+<div>
+  <button [routerLink]="['/dashboard']">Cancel</button>
+</div>
+<div>
+  <h3>Put the question and  options here</h3>
+</div>
+<div>
+  <form (submit)="createPoll()">
+    <div>
+      <label >Question</label>
+      <input type="text" name="question" [(ngModel)]="newPoll.question">
+    </div>
+    
+    <div>
+    <label> Description </label>
+    <input type="text" name="Description" [(ngModel)]="newPoll.description">
+    </div>
+
+    <div>
+      <input type="submit" value="Create Poll">
+    </div>
+  </form>
+  <div>
+    <p class="error" *ngFor="let error of errors">{{ error }}</p>
+  </div>
+</div>
