@@ -2,8 +2,8 @@ import { UserService } from './../user.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from '../user';
-import { PollService } from '../poll.service';
-import { Poll } from '../poll';
+import { AppointmentService } from '../appointment.service';
+import { Appointment } from '../appointment';
 import { FilterPipe} from '../filter.pipe';
 
 @Component({
@@ -14,7 +14,7 @@ import { FilterPipe} from '../filter.pipe';
 export class DashboardComponent implements OnInit {
 
   currentUser: User = new  User();
-  polls: Poll[];
+  appointments: Appointment[];
   characters = [
     'Finn the Dog',
     'Jake the human', 
@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit {
   constructor(
     private _userService: UserService,
     private _router: Router,
-    private _pollService: PollService
+    private _appointmentService: AppointmentService
   ) { }
 
   ngOnInit() {
@@ -33,16 +33,15 @@ export class DashboardComponent implements OnInit {
         this._router.navigateByUrl('/');
       } else {
         this.currentUser = res;
-        this.newMethod();
         console.log(this.currentUser)
         console.log("user info")
       }
-      this.getPolls();
+      this.getAppointments();
     });
   }
 
-  getPolls(){
-    this._pollService.index((polls)=> this.polls = polls)
+  getAppointments(){
+    this._appointmentService.index((appointments)=> this.appointments = appointments); 
   }
 
   logout(){
@@ -50,15 +49,10 @@ export class DashboardComponent implements OnInit {
     this._router.navigateByUrl('/');
   }
 
-
-  private newMethod() {
-    console.log('you can do this');
-  }
-
-  destroyPoll(id: string){
-    this._pollService.destroy(id,(res)=>{
+  destroyAppointment(id: string){
+    this._appointmentService.destroy(id,(res)=>{
       if(res.status === true){
-        this.getPolls();
+        this.getAppointments();
       }
     });
   }

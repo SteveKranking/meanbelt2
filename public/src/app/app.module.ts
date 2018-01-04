@@ -8,12 +8,9 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserService } from './user.service';
-import { PollNewComponent } from './poll-new/poll-new.component';
-import { PollShowComponent } from './poll-show/poll-show.component';
-import { OptionService } from './option.service';
-import { PollService } from './poll.service';
+import { AppointmentNewComponent } from './appointment-new/appointment-new.component';
+import { AppointmentService } from './appointment.service';
 import { FilterPipe} from './filter.pipe';
-import { OptionsCreateComponent } from './options-create/options-create.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +18,7 @@ import { OptionsCreateComponent } from './options-create/options-create.componen
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    PollNewComponent,
-    PollShowComponent,
-    OptionsCreateComponent
+    AppointmentNewComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,8 +28,7 @@ import { OptionsCreateComponent } from './options-create/options-create.componen
   ],
   providers: [
     UserService,
-    OptionService,
-    PollService
+    AppointmentService
   ],
   bootstrap: [AppComponent]
 })

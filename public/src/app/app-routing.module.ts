@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { PollNewComponent } from './poll-new/poll-new.component';
-import { PollShowComponent } from './poll-show/poll-show.component';
-import { OptionsCreateComponent } from './options-create/options-create.component';
+import { AppointmentNewComponent } from './appointment-new/appointment-new.component';
 
 const routes: Routes = [
   {
@@ -20,15 +18,7 @@ const routes: Routes = [
   },
   {
     path: 'create',
-    component: PollNewComponent,
-  },
-  {
-    path:'poll/:id',
-    component: PollShowComponent,
-  },
-  {
-    path: 'poll/:id/optionscreate',
-    component: OptionsCreateComponent
+    component: AppointmentNewComponent,
   }
 ];
 

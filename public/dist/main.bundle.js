@@ -26,17 +26,13 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/dashboard/dashboard.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__poll_new_poll_new_component__ = __webpack_require__("../../../../../src/app/poll-new/poll-new.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__poll_show_poll_show_component__ = __webpack_require__("../../../../../src/app/poll-show/poll-show.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__options_create_options_create_component__ = __webpack_require__("../../../../../src/app/options-create/options-create.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__appointment_new_appointment_new_component__ = __webpack_require__("../../../../../src/app/appointment-new/appointment-new.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
 
 
 
@@ -56,15 +52,7 @@ var routes = [
     },
     {
         path: 'create',
-        component: __WEBPACK_IMPORTED_MODULE_4__poll_new_poll_new_component__["a" /* PollNewComponent */],
-    },
-    {
-        path: 'poll/:id',
-        component: __WEBPACK_IMPORTED_MODULE_5__poll_show_poll_show_component__["a" /* PollShowComponent */],
-    },
-    {
-        path: 'poll/:id/optionscreate',
-        component: __WEBPACK_IMPORTED_MODULE_6__options_create_options_create_component__["a" /* OptionsCreateComponent */]
+        component: __WEBPACK_IMPORTED_MODULE_4__appointment_new_appointment_new_component__["a" /* AppointmentNewComponent */],
     }
 ];
 var AppRoutingModule = (function () {
@@ -72,8 +60,8 @@ var AppRoutingModule = (function () {
     }
     AppRoutingModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
-            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* RouterModule */].forRoot(routes)],
-            exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* RouterModule */]]
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forRoot(routes)],
+            exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]]
         })
     ], AppRoutingModule);
     return AppRoutingModule;
@@ -153,12 +141,9 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__login_login_component__ = __webpack_require__("../../../../../src/app/login/login.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/dashboard/dashboard.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__user_service__ = __webpack_require__("../../../../../src/app/user.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__poll_new_poll_new_component__ = __webpack_require__("../../../../../src/app/poll-new/poll-new.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__poll_show_poll_show_component__ = __webpack_require__("../../../../../src/app/poll-show/poll-show.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__option_service__ = __webpack_require__("../../../../../src/app/option.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__poll_service__ = __webpack_require__("../../../../../src/app/poll.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__filter_pipe__ = __webpack_require__("../../../../../src/app/filter.pipe.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__options_create_options_create_component__ = __webpack_require__("../../../../../src/app/options-create/options-create.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__appointment_new_appointment_new_component__ = __webpack_require__("../../../../../src/app/appointment-new/appointment-new.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__appointment_service__ = __webpack_require__("../../../../../src/app/appointment.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__filter_pipe__ = __webpack_require__("../../../../../src/app/filter.pipe.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -177,22 +162,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
-
-
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_13__filter_pipe__["a" /* FilterPipe */],
+                __WEBPACK_IMPORTED_MODULE_11__filter_pipe__["a" /* FilterPipe */],
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__login_login_component__["a" /* LoginComponent */],
                 __WEBPACK_IMPORTED_MODULE_7__dashboard_dashboard_component__["a" /* DashboardComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__poll_new_poll_new_component__["a" /* PollNewComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__poll_show_poll_show_component__["a" /* PollShowComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__options_create_options_create_component__["a" /* OptionsCreateComponent */]
+                __WEBPACK_IMPORTED_MODULE_9__appointment_new_appointment_new_component__["a" /* AppointmentNewComponent */],
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -202,13 +182,162 @@ var AppModule = (function () {
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_8__user_service__["a" /* UserService */],
-                __WEBPACK_IMPORTED_MODULE_11__option_service__["a" /* OptionService */],
-                __WEBPACK_IMPORTED_MODULE_12__poll_service__["a" /* PollService */]
+                __WEBPACK_IMPORTED_MODULE_10__appointment_service__["a" /* AppointmentService */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/appointment-new/appointment-new.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/appointment-new/appointment-new.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div>\n  <button [routerLink]=\"['/dashboard']\">Cancel</button>\n</div>\n<div>\n  <h3> Scheule Your Appointment!</h3>\n</div>\n<div>\n  <form (submit)=\"createAppointment()\">\n\n    <div> \n    <label> Date </label>\n    <input type=\"date\" name=\"date\" [(ngModel)]=\"newAppointment.date\">\n    </div>\n\n    <div> \n    <label> Time </label>\n    <select [(ngModel)]=\"newAppointment.time\" name=\"time\"> \n      <option> 8:00 AM </option>\n      <option> 8:30 AM </option> \n      <option> 9:00 AM </option> \n      <option> 9:30 AM </option> \n      <option> 10:00 AM </option> \n      <option> 10:30 AM </option> \n      <option> 11:00 AM </option> \n      <option> 11:30 AM </option> \n      <option> 12:00 PM </option> \n      <option> 12:30 PM </option> \n      <option> 1:00 PM </option> \n      <option> 1:30 PM </option> \n      <option> 2:00 PM </option> \n      <option> 2:30 PM </option> \n      <option> 3:00 PM </option> \n      <option> 3:30 PM </option> \n      <option> 4:00 PM </option> \n      <option> 4:30 PM </option> \n      <option> 5:00 PM </option> \n    </select>\n    </div>\n    \n    <div>\n    <label> Reason </label>\n    <input type=\"text\" name=\"reason\" [(ngModel)]=\"newAppointment.reason\">\n    </div>\n\n    <div>\n      <input type=\"submit\" value=\"Schedule Appointment\">\n    </div>\n  </form>\n  <div>\n    <p class=\"error\" *ngFor=\"let error of errors\">{{ error }}</p>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/appointment-new/appointment-new.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppointmentNewComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__appointment_service__ = __webpack_require__("../../../../../src/app/appointment.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user__ = __webpack_require__("../../../../../src/app/user.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__user_service__ = __webpack_require__("../../../../../src/app/user.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var AppointmentNewComponent = (function () {
+    function AppointmentNewComponent(_userService, _appointmentService, _router) {
+        this._userService = _userService;
+        this._appointmentService = _appointmentService;
+        this._router = _router;
+        this.newAppointment = { _id: "", user: "", date: null, time: "", reason: "" };
+        // newAppointment: NewAppointment;
+        this.errors = [];
+        this.currentUser = new __WEBPACK_IMPORTED_MODULE_3__user__["a" /* User */]();
+    }
+    AppointmentNewComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this._userService.session(function (res) {
+            if (res.status === false) {
+                _this._router.navigateByUrl('/');
+            }
+            else {
+                _this.currentUser = res;
+                console.log(_this.currentUser);
+            }
+        });
+    };
+    AppointmentNewComponent.prototype.createAppointment = function () {
+        var _this = this;
+        this.errors = [];
+        console.log(this.newAppointment.date, typeof this.newAppointment.date);
+        this._appointmentService.create(this.newAppointment, function (appointment) {
+            if (appointment.errors) {
+                for (var _i = 0, _a = Object.keys(appointment.errors); _i < _a.length; _i++) {
+                    var key = _a[_i];
+                    var error = appointment.errors[key];
+                    _this.errors.push(error.message);
+                }
+            }
+            else {
+                _this._router.navigateByUrl('/dashboard');
+            }
+        });
+    };
+    AppointmentNewComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-appointment-new',
+            template: __webpack_require__("../../../../../src/app/appointment-new/appointment-new.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/appointment-new/appointment-new.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__user_service__["a" /* UserService */],
+            __WEBPACK_IMPORTED_MODULE_1__appointment_service__["a" /* AppointmentService */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]])
+    ], AppointmentNewComponent);
+    return AppointmentNewComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/appointment.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppointmentService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AppointmentService = (function () {
+    function AppointmentService(_http) {
+        this._http = _http;
+    }
+    AppointmentService.prototype.index = function (callback) {
+        this._http.get('/appointments').subscribe(function (res) { return callback(res.json()); }, function (err) { return console.log(err); });
+    };
+    AppointmentService.prototype.create = function (newAppointment, callback) {
+        this._http.post('/appointments', newAppointment).subscribe(function (res) {
+            console.log(res.json());
+            callback(res.json());
+        }, function (err) { return console.log(err); });
+    };
+    AppointmentService.prototype.destroy = function (id, callback) {
+        this._http.delete("/appointments/" + id).subscribe(function (res) { return callback(res.json()); }, function (err) { return console.log(err); });
+    };
+    AppointmentService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
+    ], AppointmentService);
+    return AppointmentService;
 }());
 
 
@@ -236,7 +365,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/dashboard/dashboard.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Welcome! {{currentUser.name}}</h1>\n\n<div>\n    <button class =\"buttons\" (click)=\"logout()\">Logout</button>\n    <button [routerLink]=\"['/create']\" class=\"buttons\">Add a New Post</button>\n</div>\n<div>\n    <h2>Current Polls</h2>\n    <!-- <div>\n        <input [(ngModel)]=\"searchText\" placeholder=\"search text goes here\">\n        <ul>\n            <li *ngFor=\"let c of polls | filter: searchText\">\n                {{c.question}}\n            </li>\n        </ul>\n    </div> -->\n    <input [(ngModel)]=\"searchText\" placeholder=\"search text goes here\">\n    <table>\n   <tr>\n        <th>User</th>\n        <th>Question</th>\n        <th> Answers </th>\n        <th> Date Posted</th>\n        <th> Action</th>\n    </tr>\n    <tr *ngFor=\"let poll of polls | filter: searchText\">\n            <!-- | filter : searchText\" -->\n        <td>{{poll.user.name}}</td>\n        <td><a [routerLink]=\"['/poll', poll._id]\">{{ poll.question }}</a></td>\n        <td>  {{poll.numAnswers }}</td> \n        <td>{{ poll.createdAt | date: 'short' }}</td>\n        <td><button (click)=\"destroyPoll(poll._id)\" *ngIf=\"currentUser._id === poll.user._id\">Delete</button></td>\n    </tr>\n    </table>\n</div>\n"
+module.exports = "<h1>Welcome! {{currentUser.name}}</h1>\n\n<div>\n    <button class =\"buttons\" (click)=\"logout()\">Logout</button>\n    <button [routerLink]=\"['/create']\" class=\"buttons\"> Schedule Appointment</button>\n</div>\n<div>\n    <h2>Appointments Scheduled</h2>\n\n    <input [(ngModel)]=\"searchText\" placeholder=\"search text goes here\" value=\"Search by Reason for visit\">\n    <table>\n   <tr>\n        <th>Date </th>\n        <th>Patient </th>\n        <th> Reason </th>\n        <th> Time </th>\n        <th> Action</th>\n    </tr>\n    <tr *ngFor=\"let appointment of appointments | filter: searchText\">\n        <td> {{ appointment.date | date:\"MM/dd/yy\"}} </td>\n        <td> {{appointment.user.name}} </td>\n        <td> {{ appointment.reason }} </td> \n        <td> {{ appointment.time }} </td>\n        <td><button (click)=\"destroyAppointment(appointment._id)\" *ngIf=\"currentUser._id === appointment.user._id\">Delete</button></td>\n    </tr>\n    </table>\n</div>\n"
 
 /***/ }),
 
@@ -249,7 +378,7 @@ module.exports = "<h1>Welcome! {{currentUser.name}}</h1>\n\n<div>\n    <button c
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user__ = __webpack_require__("../../../../../src/app/user.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__poll_service__ = __webpack_require__("../../../../../src/app/poll.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__appointment_service__ = __webpack_require__("../../../../../src/app/appointment.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -265,10 +394,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var DashboardComponent = (function () {
-    function DashboardComponent(_userService, _router, _pollService) {
+    function DashboardComponent(_userService, _router, _appointmentService) {
         this._userService = _userService;
         this._router = _router;
-        this._pollService = _pollService;
+        this._appointmentService = _appointmentService;
         this.currentUser = new __WEBPACK_IMPORTED_MODULE_3__user__["a" /* User */]();
         this.characters = [
             'Finn the Dog',
@@ -284,29 +413,25 @@ var DashboardComponent = (function () {
             }
             else {
                 _this.currentUser = res;
-                _this.newMethod();
                 console.log(_this.currentUser);
                 console.log("user info");
             }
-            _this.getPolls();
+            _this.getAppointments();
         });
     };
-    DashboardComponent.prototype.getPolls = function () {
+    DashboardComponent.prototype.getAppointments = function () {
         var _this = this;
-        this._pollService.index(function (polls) { return _this.polls = polls; });
+        this._appointmentService.index(function (appointments) { return _this.appointments = appointments; });
     };
     DashboardComponent.prototype.logout = function () {
         this._userService.logout(this.currentUser);
         this._router.navigateByUrl('/');
     };
-    DashboardComponent.prototype.newMethod = function () {
-        console.log('you can do this');
-    };
-    DashboardComponent.prototype.destroyPoll = function (id) {
+    DashboardComponent.prototype.destroyAppointment = function (id) {
         var _this = this;
-        this._pollService.destroy(id, function (res) {
+        this._appointmentService.destroy(id, function (res) {
             if (res.status === true) {
-                _this.getPolls();
+                _this.getAppointments();
             }
         });
     };
@@ -317,8 +442,8 @@ var DashboardComponent = (function () {
             styles: [__webpack_require__("../../../../../src/app/dashboard/dashboard.component.css")]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__user_service__["a" /* UserService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */],
-            __WEBPACK_IMPORTED_MODULE_4__poll_service__["a" /* PollService */]])
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */],
+            __WEBPACK_IMPORTED_MODULE_4__appointment_service__["a" /* AppointmentService */]])
     ], DashboardComponent);
     return DashboardComponent;
 }());
@@ -351,7 +476,7 @@ var FilterPipe = (function () {
         searchText = searchText.toLowerCase();
         return items.filter(function (it) {
             console.log(it);
-            return it.question.toLowerCase().includes(searchText);
+            return it.reason.toLowerCase().includes(searchText);
         });
     };
     FilterPipe = __decorate([
@@ -468,468 +593,9 @@ var LoginComponent = (function () {
             styles: [__webpack_require__("../../../../../src/app/login/login.component.css")]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__user_service__["a" /* UserService */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]])
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]])
     ], LoginComponent);
     return LoginComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "../../../../../src/app/new-poll.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewPoll; });
-var NewPoll = (function () {
-    function NewPoll() {
-    }
-    return NewPoll;
-}());
-
-
-
-/***/ }),
-
-/***/ "../../../../../src/app/option.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OptionService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var OptionService = (function () {
-    function OptionService(_http) {
-        this._http = _http;
-    }
-    OptionService.prototype.update = function (id, callback) {
-        this._http.put("options/" + id, {}).subscribe(function (res) { return callback(res.json()); }, function (err) { return console.log(err); });
-    };
-    OptionService.prototype.create = function (option, callback) {
-        console.log(option);
-        this._http.post('/poll/:id/optionscreate', option).subscribe(function (res) { return callback(res.json()); }, function (err) { return console.log(err); });
-    };
-    OptionService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
-    ], OptionService);
-    return OptionService;
-}());
-
-
-
-/***/ }),
-
-/***/ "../../../../../src/app/option.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Option; });
-var Option = (function () {
-    function Option() {
-    }
-    return Option;
-}());
-
-
-
-/***/ }),
-
-/***/ "../../../../../src/app/options-create/options-create.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/options-create/options-create.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div>\n    <button [routerLink]=\"['/dashboard']\" > Home </button>\n    <button [routerLink]=\"['/poll', poll._id]\"> Back to the Poll </button>\n</div>\n\n<h2>{{ poll.question }}</h2>\n<h2> {{ poll | json }} </h2>\n<p> Add a comment/option! </p>\n<div> \n  <form (submit)=\"createOptions()\"> \n    <label> Comment/Option: </label>\n    <input type=\"text\" name=\"\" [(ngModel)]=\"poll.options\" [ngModelOptions]=\"{standalone: true}\"> \n    <button type=\"submit\"> Post </button>\n  </form>\n</div>\n\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/options-create/options-create.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OptionsCreateComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__user_service__ = __webpack_require__("../../../../../src/app/user.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__poll_service__ = __webpack_require__("../../../../../src/app/poll.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__user__ = __webpack_require__("../../../../../src/app/user.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__poll__ = __webpack_require__("../../../../../src/app/poll.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__option_service__ = __webpack_require__("../../../../../src/app/option.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__option__ = __webpack_require__("../../../../../src/app/option.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-
-var OptionsCreateComponent = (function () {
-    function OptionsCreateComponent(_userService, _pollService, _optionService, _router, _route) {
-        this._userService = _userService;
-        this._pollService = _pollService;
-        this._optionService = _optionService;
-        this._router = _router;
-        this._route = _route;
-        this.poll = new __WEBPACK_IMPORTED_MODULE_5__poll__["a" /* Poll */]();
-        this.reply = { option: '', question: '', post: '' };
-        this.newOption = this.reply;
-        this.option = new __WEBPACK_IMPORTED_MODULE_7__option__["a" /* Option */];
-        this.currentUser = new __WEBPACK_IMPORTED_MODULE_4__user__["a" /* User */]();
-    }
-    OptionsCreateComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this._route.params.subscribe(function (params) { return _this.poll_id = params.id; });
-        console.log(this.poll_id);
-        console.log('hello');
-        this.getPoll();
-    };
-    OptionsCreateComponent.prototype.getPoll = function () {
-        var _this = this;
-        this._pollService.show(this.poll_id, function (poll) { return _this.poll = poll; });
-    };
-    OptionsCreateComponent.prototype.createOptions = function () {
-        var _this = this;
-        this.errors = [];
-        this._optionService.create(this.option, function (option) {
-            if (option.errors) {
-                for (var _i = 0, _a = Object.keys(option.errors); _i < _a.length; _i++) {
-                    var key = _a[_i];
-                    var error = option.errors[key];
-                    _this.errors.push(error.message);
-                }
-            }
-            else {
-                _this._router.navigateByUrl('/dashboard');
-            }
-        });
-    };
-    OptionsCreateComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'app-options-create',
-            template: __webpack_require__("../../../../../src/app/options-create/options-create.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/options-create/options-create.component.css")]
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__user_service__["a" /* UserService */],
-            __WEBPACK_IMPORTED_MODULE_2__poll_service__["a" /* PollService */],
-            __WEBPACK_IMPORTED_MODULE_6__option_service__["a" /* OptionService */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* ActivatedRoute */]])
-    ], OptionsCreateComponent);
-    return OptionsCreateComponent;
-}());
-
-//tie option to poll and add it
-// i need req.params.id because thats the poll id 
-// app.put because this updates
-// addOption() {
-//   this._optionService.createOption(this.option, option => this.option = option);
-// } 
-
-
-/***/ }),
-
-/***/ "../../../../../src/app/poll-new/poll-new.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/poll-new/poll-new.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div>\n  <button [routerLink]=\"['/dashboard']\">Cancel</button>\n</div>\n<div>\n  <h3>Put the question and  options here</h3>\n</div>\n<div>\n  <form (submit)=\"createPoll()\">\n    <div>\n      <label >Question</label>\n      <input type=\"text\" name=\"question\" [(ngModel)]=\"newPoll.question\">\n    </div>\n    \n    <div>\n    <label> Description </label>\n    <input type=\"text\" name=\"Description\" [(ngModel)]=\"newPoll.description\">\n    </div>\n\n    <div>\n      <input type=\"submit\" value=\"Create Poll\">\n    </div>\n  </form>\n  <div>\n    <p class=\"error\" *ngFor=\"let error of errors\">{{ error }}</p>\n  </div>\n</div>\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/poll-new/poll-new.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PollNewComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__new_poll__ = __webpack_require__("../../../../../src/app/new-poll.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__poll_service__ = __webpack_require__("../../../../../src/app/poll.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__user__ = __webpack_require__("../../../../../src/app/user.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__user_service__ = __webpack_require__("../../../../../src/app/user.service.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-var PollNewComponent = (function () {
-    function PollNewComponent(_userService, _pollService, _router) {
-        this._userService = _userService;
-        this._pollService = _pollService;
-        this._router = _router;
-        this.newPoll = new __WEBPACK_IMPORTED_MODULE_1__new_poll__["a" /* NewPoll */]();
-        this.errors = [];
-        this.currentUser = new __WEBPACK_IMPORTED_MODULE_4__user__["a" /* User */]();
-    }
-    PollNewComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this._userService.session(function (res) {
-            if (res.status === false) {
-                _this._router.navigateByUrl('/');
-            }
-            else {
-                _this.currentUser = res;
-                console.log(_this.currentUser);
-            }
-        });
-    };
-    PollNewComponent.prototype.createPoll = function () {
-        var _this = this;
-        this.errors = [];
-        this._pollService.create(this.newPoll, function (poll) {
-            if (poll.errors) {
-                for (var _i = 0, _a = Object.keys(poll.errors); _i < _a.length; _i++) {
-                    var key = _a[_i];
-                    var error = poll.errors[key];
-                    _this.errors.push(error.message);
-                }
-            }
-            else {
-                _this._router.navigateByUrl('/dashboard');
-            }
-        });
-    };
-    PollNewComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'app-poll-new',
-            template: __webpack_require__("../../../../../src/app/poll-new/poll-new.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/poll-new/poll-new.component.css")]
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__user_service__["a" /* UserService */],
-            __WEBPACK_IMPORTED_MODULE_2__poll_service__["a" /* PollService */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]])
-    ], PollNewComponent);
-    return PollNewComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "../../../../../src/app/poll-show/poll-show.component.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
-/***/ "../../../../../src/app/poll-show/poll-show.component.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div>\n  <button [routerLink]=\"['/dashboard']\" >Go to Polls</button>\n  <button [routerLink]=\"['/poll', poll._id, 'optionscreate']\"> Create More Answers </button>\n</div>\n<div>\n  <h2>{{ poll.question}}</h2>\n  <p> {{ poll.description }} </p>\n  <p> Click the vote button to choose one </p>\n</div>\n<div>\n  <table>\n    <tr>\n      <th>Option</th>\n      <th>Votes</th>\n      <th>Action</th>\n    </tr>\n    <tr *ngFor=\"let option of poll.options\">\n      <td>{{option.option}}</td>\n      <td>{{option.vote}}</td>\n      <td><button (click)=\"update(option._id)\">Vote</button></td>\n    </tr>\n  </table>\n</div>\n\n\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/poll-show/poll-show.component.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PollShowComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__user_service__ = __webpack_require__("../../../../../src/app/user.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__poll_service__ = __webpack_require__("../../../../../src/app/poll.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__poll__ = __webpack_require__("../../../../../src/app/poll.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__option_service__ = __webpack_require__("../../../../../src/app/option.service.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-var PollShowComponent = (function () {
-    function PollShowComponent(_userService, _pollService, _optionService, _router, _route) {
-        this._userService = _userService;
-        this._pollService = _pollService;
-        this._optionService = _optionService;
-        this._router = _router;
-        this._route = _route;
-        this.poll = new __WEBPACK_IMPORTED_MODULE_4__poll__["a" /* Poll */]();
-    }
-    PollShowComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this._route.params.subscribe(function (params) { return _this.poll_id = params.id; });
-        console.log(this.poll_id);
-        console.log('hello');
-        this._userService.session(function (res) {
-            if (res.status === false) {
-                _this._router.navigateByUrl('/');
-            }
-            else {
-                _this.currentUser = res;
-                _this.getPoll();
-            }
-        });
-    };
-    PollShowComponent.prototype.getPoll = function () {
-        var _this = this;
-        this._pollService.show(this.poll_id, function (poll) { return _this.poll = poll; });
-    };
-    PollShowComponent.prototype.update = function (option_id) {
-        var _this = this;
-        this._optionService.update(option_id, function (res) { return _this.getPoll(); });
-    };
-    PollShowComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'app-poll-show',
-            template: __webpack_require__("../../../../../src/app/poll-show/poll-show.component.html"),
-            styles: [__webpack_require__("../../../../../src/app/poll-show/poll-show.component.css")]
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__user_service__["a" /* UserService */],
-            __WEBPACK_IMPORTED_MODULE_2__poll_service__["a" /* PollService */],
-            __WEBPACK_IMPORTED_MODULE_5__option_service__["a" /* OptionService */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */],
-            __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* ActivatedRoute */]])
-    ], PollShowComponent);
-    return PollShowComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "../../../../../src/app/poll.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PollService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var PollService = (function () {
-    function PollService(_http) {
-        this._http = _http;
-    }
-    PollService.prototype.index = function (callback) {
-        this._http.get('/polls').subscribe(function (res) { return callback(res.json()); }, function (err) { return console.log(err); });
-    };
-    PollService.prototype.create = function (newPoll, callback) {
-        this._http.post('/polls', newPoll).subscribe(function (res) { return callback(res.json()); }, function (err) { return console.log(err); });
-    };
-    PollService.prototype.show = function (id, callback) {
-        this._http.get("/polls/" + id).subscribe(function (res) { return callback(res.json()); }, function (err) { return console.log(err); });
-    };
-    PollService.prototype.destroy = function (id, callback) {
-        this._http.delete("/polls/" + id).subscribe(function (res) { return callback(res.json()); }, function (err) { return console.log(err); });
-    };
-    PollService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]])
-    ], PollService);
-    return PollService;
-}());
-
-
-
-/***/ }),
-
-/***/ "../../../../../src/app/poll.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Poll; });
-var Poll = (function () {
-    function Poll() {
-    }
-    return Poll;
 }());
 
 
